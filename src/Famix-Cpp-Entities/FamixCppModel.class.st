@@ -17,6 +17,11 @@ FamixCppModel class >> annotation [
 	<generated>
 ]
 
+{ #category : #meta }
+FamixCppModel class >> canBeImportedFromFile [
+	^ false
+]
+
 { #category : #accessing }
 FamixCppModel >> allMainEntities [
 	<navigation: 'All main entities'>
