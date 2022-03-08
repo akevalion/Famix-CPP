@@ -1,1 +1,1 @@
-Package { #name : #BaselineOfFAMIXCpp }
+Package { #name : #BaselineOfFamixCpp }

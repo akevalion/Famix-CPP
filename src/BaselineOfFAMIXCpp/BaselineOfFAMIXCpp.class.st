@@ -2,13 +2,13 @@
 Baseline of cpps
 "
 Class {
-	#name : #BaselineOfFAMIXCpp,
+	#name : #BaselineOfFamixCpp,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfFAMIXCpp
+	#category : #BaselineOfFamixCpp
 }
 
 { #category : #baselines }
-BaselineOfFAMIXCpp >> baseline: spec [
+BaselineOfFamixCpp >> baseline: spec [
 	<baseline>
 	spec for: #common do: [ 
 		self petitParser: spec.
@@ -25,12 +25,12 @@ BaselineOfFAMIXCpp >> baseline: spec [
 ]
 
 { #category : #dependencies }
-BaselineOfFAMIXCpp >> petitParser2: spec [
+BaselineOfFamixCpp >> petitParser2: spec [
 	spec baseline: 'PetitParser2Core' with: [ spec repository: 'github://kursjan/petitparser2' ]
 ]
 
 { #category : #dependencies }
-BaselineOfFAMIXCpp >> petitParser: spec [
+BaselineOfFamixCpp >> petitParser: spec [
 	spec baseline: 'PetitParser' with: [ 
 		spec
 			loads: #('Core' 'Preprocessor');
