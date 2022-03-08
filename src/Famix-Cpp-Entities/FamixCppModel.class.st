@@ -19,7 +19,7 @@ FamixCppModel class >> annotation [
 
 { #category : #meta }
 FamixCppModel class >> canBeImportedFromFile [
-	^ false
+	^ true
 ]
 
 { #category : #accessing }
