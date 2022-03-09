@@ -38,7 +38,7 @@ FamixCppMethod >> isDead [
 	(self isConstructor or: [ self isDestructor ]) ifTrue: [ ^ false ].
 
 	^ self isContainerEntity
-		ifTrue: [ self lookUpPropertyNamed: #isDead computedAs: [ self hasIncomingDependencies not or: [ self queryAllIncoming withoutSelfLoops isEmpty ] ] ]
+		ifTrue: [ self lookUpPropertyNamed: #isDead computedAs: [ self hasIncoming not or: [ self queryAllIncoming withoutSelfLoops isEmpty ] ] ]
 		ifFalse: [ false ]
 ]
 
